@@ -6,7 +6,7 @@ You can download the ready-made artifacts from gitlab: take the [latest archive]
 
 ## Pre-requisites
 
-As this is based on Android 9, it is required to install stock vendor.img from Android 9. You can Android 9 stock firmware from [Xiaomi Firmware Updater](https://xiaomifirmwareupdater.com)
+As this is based on Android 9, it is required to install stock vendor.img from Android 9. You can Android 9 stock firmware from [Xiaomi Firmware Updater](https://xiaomifirmwareupdater.com/). [GLOBAL](https://github.com/TryHardDood/mi-vendor-updater/releases/download/equuleus_global-stable/fw-vendor_equuleus_miui_MI8UDGlobal_V11.0.5.0.PECMIXM_390eb435f5_9.0.zip), [CHINA](https://github.com/TryHardDood/mi-vendor-updater/releases/download/equuleus-stable/fw-vendor_equuleus_miui_MI8UD_V11.0.3.0.PECCNXM_88e4eae066_9.0.zip)
 
 Copy these images to directory `out/` above together with the artifacts.
 
