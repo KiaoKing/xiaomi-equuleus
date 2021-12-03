@@ -1,4 +1,4 @@
-# Ubuntu Touch device tree for Xiaomi Mi 8 (dipper)
+# Ubuntu Touch device tree for Xiaomi Mi 8 Pro (equuleus)
 
 This is based on Halium 9.0, and uses the mechanism described in [this page](https://github.com/ubports/porting-notes/wiki/GitLab-CI-builds-for-devices-based-on-halium_arm64-(Halium-9)).
 
