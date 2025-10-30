@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       # Run initial build, and compile kernel and recovery
       - name: Build
@@ -27,14 +27,14 @@ jobs:
           sudo ln -sf python2.7 /usr/bin/python
           ./build.sh
       - name: Upload basic tarball with boot and recovery images
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           path: out/*
   flashable:
     runs-on: ubuntu-22.04
     needs: build
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       
       - name: Development Build
         run: |
@@ -44,7 +44,7 @@ jobs:
           ./build/prepare-fake-ota.sh out/device_$DEVICE.tar.xz ota
           mkdir -p out/
           ./build/system-image-from-ota.sh ota/ubuntu_command out
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: OTA-images
           path: |
