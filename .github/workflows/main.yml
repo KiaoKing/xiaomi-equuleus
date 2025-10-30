@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22.04.4
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
         with:
           path: out/*
   flashable:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22.04.4
     needs: build
     steps:
       - uses: actions/checkout@v4
